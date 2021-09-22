@@ -1,0 +1,295 @@
+/*This is the CSS file by Matheus Mulundu 220053324 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson&family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
+
+
+body {
+    fposition: relative;
+    background: #262626;
+    border-radius: 0px;
+    background: #262626;
+    border-radius: 0px;
+    font-family: 'Lato', 'Judson', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*global styling*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+header {
+    background-color: #F5F5F5;
+    padding: 0;
+    border-radius: 0px 0px 0px 0px;
+    min-height: 70px;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Mate', Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
+header #branding {
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav {
+    float: right;
+}
+
+header a:hover {
+    color: #262626;
+    font-weight: bold;
+}
+
+header .current a {
+    font-weight: bold;
+    color: #877979;
+}
+
+
+
+/*section*/
+
+section h1 {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-left: 6%;
+    font-family: 'Judson', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 83px;
+    color: #FFFFFF;
+}
+
+
+section p {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-left: 6%;
+    font-family: 'Lato' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+section .showcase-span-words {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.email {
+    margin-bottom: 14px;
+}
+
+.email input[type="email"]{
+    padding: 4px;
+    background-color: #E5E5E5;
+    width: 250px;
+    height: 25px;
+    border-radius: 6.34454px;
+    outline: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    align-items: center;
+    margin-left: 6%;
+}
+
+#talk-to-us-button {
+    background-color: #BDDAEB00;
+    border: 2px solid #FF0002;
+    border-radius: 28px;
+    font-family: 'Sarpanch', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    height: 30px;
+    color: #FF0000;
+    cursor: pointer;
+}
+
+section img {
+    display: flex;
+    float: right;
+    margin-top: -40%;
+    margin-left: 13%;
+    border-radius: 50%;
+    width: 409px;
+    height: 397px;
+    box-shadow: 0px 4px 0px 1px #545353;
+}
+
+
+
+/*footer*/
+
+.wrapper .button {
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.wrapper .button img {
+    width: 32px;
+    height: 32px;
+    padding: 0 7px 0 7px;
+    margin: 8px;
+}
+
+/*.wrapper .button img:hover {
+    
+} 
+*/
+
+footer #rights-reserved {
+    float: left;
+    font-family: 'Mate', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+
+footer #privacy-policy {
+    float: right;
+    font-family: 'Mate', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+footer {
+    color: #000000;
+    background: #F5F5F5;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer{
+    margin-left: 20%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+/*media queries*/
+
+/*phones*/
+@media(max-width: 768px){
+    header #branding, header nav, header nav li{
+        display: inline;
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding-right: 2px;
+        margin: 0;
+    }
+
+    header {
+        padding-bottom: 5px;
+    }
+
+    #showcase h1 {
+        font-size: 50px;
+        line-height: normal;
+        margin: auto;
+    }
+
+    section .showcase-span-words{
+        font-family: 'Judson';
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    section .showcase-paragraph{
+        padding-bottom: 10px;
+    }
+
+
+    footer {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    footer #rights-reserved{
+        display: none;
+    }
+
+    footer #privacy-policy{
+        text-align: center;
+    }
+}
+
+/*tablets*/
+@media(max-width: 1024px) {
+    header {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    header a{
+        color: #FFFFFF;
+    }
+
+    header .current a{
+        color: #F00D0D;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    footer #rights-reserved{
+        color: #FFFFFF;
+    }
+
+    .wrapper {
+        display: inline-flex;
+    }
+
+}
