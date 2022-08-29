@@ -1,4 +1,4 @@
 # WAD
-WAD assignment
 
-This is my WAD part1 massignment. It consists of a redesigned web page of my choosing. I am remaking the executive-tech homepage.
+
+This is an extremely basic view of a landing page, made using only html and css.
